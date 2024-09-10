@@ -60,7 +60,8 @@ public class NoteController {
         Optional<Note> noteToPatch = noteService.modifyNoteById(note, id);
 
         if (noteToPatch.isPresent()) {
-            return ResponseEntity.ok(note);
+            Note notePatched = noteService.getNoteById(id);
+            return ResponseEntity.ok(notePatched);
         }
         return ResponseEntity.notFound().build();
     }
