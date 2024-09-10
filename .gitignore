@@ -34,4 +34,4 @@ build/
 
 .env
 secrets.py
-notes_venv/
+/notes_venv/
