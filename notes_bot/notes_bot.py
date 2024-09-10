@@ -3,7 +3,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 from secrets import TOKEN
 import requests
 
-NOTES_ENDPOINT = 'http://172.22.48.1:8085/notes'
+NOTES_ENDPOINT = 'http://localhost:8085/notes'
 
 # Commands
 async def get_all_notes_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
