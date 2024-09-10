@@ -33,5 +33,6 @@ build/
 .vscode/
 
 .env
+notes_bot/__pycache__/
 notes_bot/secrets.py
 notes_bot/notes_venv/
